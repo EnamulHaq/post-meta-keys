@@ -3,7 +3,7 @@ function get_all_custom_fields_from_post_type($post_type = 'sports') {
     // Get all posts of the specified post type
     $args = array(
         'post_type' => $post_type,
-        'posts_per_page' => -1, // Get all posts
+        'posts_per_page' => 1, // Get all posts
     );
     
     $posts = get_posts($args);
